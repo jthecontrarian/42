@@ -6,7 +6,7 @@
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 10:04:36 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/10 10:04:38 by jelau            ###   ########.fr       */
+/*   Updated: 2026/08/10 10:07:19 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-
+/*
 #include <stdio.h>
 
 int main()
@@ -36,4 +36,4 @@ int main()
     printf("%d", ft_str_is_alpha("ABCDEFGHIJKLMNOPQRSTUVEWXYZ!"));
 	printf("%d", ft_str_is_alpha(""));
 }
-
+*/
