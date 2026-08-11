@@ -1,40 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 10:04:08 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/11 16:14:40 by jelau            ###   ########.fr       */
+/*   Created: 2026/08/11 11:41:11 by jelau             #+#    #+#             */
+/*   Updated: 2026/08/11 11:54:42 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase(char *str)
+int	ft_strlen(char *str)
 {
-	int	n;
+	int	i;
 
-	n = 0;
-	while (str[n] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (str[n] < 65 || str[n] > 90)
-		{
-			return (0);
-		}
-		n++;
+		i++;
 	}
-	return (1);
+	return (i);
 }
 
 /*
 #include <stdio.h>
+#include <string.h>
 
-int main()
+int main(void)
 {
-	printf("%d", ft_str_is_uppercase("ABCDEFGHIJKLMNOPQRSTUVEWXYZ"));
-	printf("%d", ft_str_is_uppercase("abcdefghijklmnopqrstuvwxyz"));
-	printf("%d", ft_str_is_uppercase("ABCDEFGHIJKLMNOPQrstuvwxyz"));
-    printf("%d", ft_str_is_uppercase("!"));
-	printf("%d", ft_str_is_uppercase(""));
+    printf("%d\n", ft_strlen("skibidi"));
+    printf("%d\n", ft_strlen(""));
+	return (0);
 }
 */

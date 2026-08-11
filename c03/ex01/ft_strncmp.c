@@ -6,13 +6,13 @@
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 17:03:59 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/10 17:47:43 by jelau            ###   ########.fr       */
+/*   Updated: 2026/08/11 16:16:16 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < n && (s1[i] != '\0' || s2[i] != '\0'))

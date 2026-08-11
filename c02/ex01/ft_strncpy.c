@@ -6,13 +6,13 @@
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 10:04:45 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/10 11:45:22 by jelau            ###   ########.fr       */
+/*   Updated: 2026/08/11 16:15:20 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (src[i] != '\0' && i < n)
