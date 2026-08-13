@@ -6,10 +6,11 @@
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 18:23:49 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/12 22:19:34 by jelau            ###   ########.fr       */
+/*   Updated: 2026/08/13 10:50:05 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include <stdio.h>
 #include <limits.h>
 #include <time.h>
@@ -65,8 +66,9 @@ int	ft_sqrt_2(int nb)
     }
     return (0);
 }
+*/
 
-int ft_sqrt_3(int nb)
+int ft_sqrt(int nb)
 {
     int left;
     int mid;
@@ -95,7 +97,7 @@ int ft_sqrt_3(int nb)
     }
     return (0); //not perfect square
 }
-
+/*
 int	reference_sqrt(int nb)
 {
 	double	root;
@@ -172,7 +174,7 @@ void	test_correctness(const char *name, int (*sqrt_func)(int))
 		i++;
 	}
 
-	// /* Exhaustive test of -1,000,000 -> 1,000,000 */
+	// // Exhaustive test of -1,000,000 -> 1,000,000 
 	// i = -1000000;
 	// while (i <= 1000000)
 	// {
@@ -244,3 +246,4 @@ int	main(void)
 	test_correctness("ft_sqrt_3", ft_sqrt_3);
 	return (0);
 }
+*/
