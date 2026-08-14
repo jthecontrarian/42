@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/13 22:58:26 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/13 23:04:10 by jelau            ###   ########.fr       */
+/*   Created: 2026/08/13 16:16:49 by jelau             #+#    #+#             */
+/*   Updated: 2026/08/13 19:57:49 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
-    int i;
-
-    i = argc - 1;
-    while (i > 0)
-    {
-        while (*argv[i] != '\0')
-        {
-            write(1, argv[i], 1);
-            argv[i]++;
-        }
-        write(1,"\n",1);
-        i--;
-    }
-    return (0);
+	(void)argc;
+	while (*argv[0] != '\0')
+	{
+		write(1, argv[0], 1);
+		argv[0]++;
+	}
+	write(1, "\n", 1);
+	return (0);
 }
