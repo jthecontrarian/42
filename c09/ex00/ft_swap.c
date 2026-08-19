@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: jelau <jelau@student.42.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/13 19:04:56 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/13 19:57:21 by jelau            ###   ########.fr       */
+/*   Created: 2026/08/06 18:13:40 by jelau             #+#    #+#             */
+/*   Updated: 2026/08/07 12:06:45 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	main(int argc, char *argv[])
+void	ft_swap(int *a, int *b)
 {
-	int	i;
+	int	c;
 
-	i = 1;
-	while (i < argc)
-	{
-		while (*argv[i] != '\0')
-		{
-			write(1, argv[i], 1);
-			argv[i]++;
-		}
-		write(1, "\n", 1);
-		i++;
-	}
-	return (0);
+	c = *a;
+	*a = *b;
+	*b = c;
 }
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int	a;
+	int	b;
+
+	a = 67;
+	b = 69;
+	ft_swap(&a, &b);
+	printf("a=%d b=%d", a, b);
+}
+*/

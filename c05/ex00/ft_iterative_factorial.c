@@ -6,14 +6,14 @@
 /*   By: jelau <jelau@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 18:10:35 by jelau             #+#    #+#             */
-/*   Updated: 2026/08/12 11:34:58 by jelau            ###   ########.fr       */
+/*   Updated: 2026/08/17 12:01:12 by jelau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_factorial(int nb)
-{	
+{
 	int	result;
-	
+
 	result = 1;
 	if (nb < 0)
 		return (0);
@@ -22,7 +22,7 @@ int	ft_iterative_factorial(int nb)
 		result = result * nb;
 		nb--;
 	}
-	return result;
+	return (result);
 }
 
 /*
